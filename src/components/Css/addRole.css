@@ -1,0 +1,137 @@
+/* General Form Container */
+
+.add-role-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 45px 100px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  border: 2px solid #e0f7fa;
+}
+
+/* Form Heading */
+.add-role-form h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Input Section */
+.add-role-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #444;
+}
+
+.add-role-form input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.add-role-form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Permissions Section */
+.add-role-form h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.add-role-form label input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+.add-role-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Action Buttons */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; /* Slight space between buttons */
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Save Button */
+.form-actions button.save-button {
+  background-color: #007bff; /* Appealing blue color */
+  color: white;
+}
+
+.form-actions button.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel Button */
+.form-actions button.cancel-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+}
+
+.form-actions button.cancel-button:hover {
+  background-color: #d32f2f;
+}
+.form-actions button.back-button {
+  background-color: rgb(58, 161, 58); /* Blue color */
+  color: white;
+}
+
+.form-actions button.back-button:hover {
+  background-color: rgb(43, 142, 43); /* Darker blue on hover */
+}
+/* Reset Button */
+.form-actions button.reset-button {
+  background-color: #51d756; /* Green color */
+  color: white;
+}
+
+.form-actions button.reset-button:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .add-role-form {
+    padding: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
